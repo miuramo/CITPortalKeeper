@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "CITPortal Keeper",
+    "version": "1.1",
+    "description": "Keep CIT Portal logged in",
+    "content_scripts": [
+	{
+	    "matches": ["https://portal.it-chiba.ac.jp/uprx/*"],
+	    "js":  ["inject_timer.js"],
+	    "css": ["inject_css.css"]
+	}
+    ],
+    "permissions": [
+	"tabs"
+    ],
+    "browser_action": {
+	"default_title": "CITPortal Keeper",
+	"default_icon": "icons/c48.png",
+	"default_popup":"popup.html"
+    },
+    "icons": {
+	"16": "icons/c16.png",
+	"48": "icons/c48.png",
+	"128": "icons/c128.png"
+    }
+}

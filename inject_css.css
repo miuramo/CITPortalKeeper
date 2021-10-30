@@ -1,0 +1,24 @@
+.top_progress_fg {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    height: 2px;
+    background: #4ff;
+}
+
+.top_progress_bg {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    height: 2px;
+    background: #e22;
+}
+
+.top_progress_sec {
+    position: fixed;
+    width: 40px;
+    top: 2px;
+    padding: 2px 5px;
+    background: rgba(200,200,200,0.4);
+    color: #333;
+}
