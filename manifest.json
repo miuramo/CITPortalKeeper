@@ -1,7 +1,7 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "CITPortal Keeper",
-    "version": "1.1",
+    "version": "1.3",
     "description": "Keep CIT Portal logged in",
     "content_scripts": [
 	{
@@ -10,10 +10,16 @@
 	    "css": ["inject_css.css"]
 	}
     ],
+    "web_accessible_resources": [
+	{
+	    "matches": ["https://*/*"],
+	    "resources": ["war.js"]
+	}
+    ], 
     "permissions": [
 	"tabs"
     ],
-    "browser_action": {
+    "action": {
 	"default_title": "CITPortal Keeper",
 	"default_icon": "icons/c48.png",
 	"default_popup":"popup.html"
