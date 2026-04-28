@@ -1,5 +1,5 @@
 // Check top page
-if (location.href=="https://portal.it-chiba.ac.jp/uprx/"){
+if (location.href=="https://portal.chibatech.ac.jp/uprx/"){
     // トップページだったら、なにもしない
 } else {
 

@@ -5,7 +5,7 @@
     "description": "Keep CIT Portal logged in",
     "content_scripts": [
 	{
-	    "matches": ["https://portal.it-chiba.ac.jp/uprx/*"],
+	    "matches": ["https://portal.chibatech.ac.jp/uprx/*"],
 	    "js":  ["inject_timer.js"],
 	    "css": ["inject_css.css"]
 	}
