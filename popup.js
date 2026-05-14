@@ -1,6 +1,6 @@
 $(window).on('load', function(){
     // まだタブを開いていないときのみ、拡張機能のボタンで開く
-    var regex = new RegExp("portal.it-chiba.ac.jp");
+    var regex = new RegExp("portal.chibatech.ac.jp");
     chrome.tabs.query({}, tabs => {
 	const results = document.getElementById('results');
 	var isOpen = false;
@@ -10,7 +10,7 @@ $(window).on('load', function(){
 	    }
 	}
 	if (!isOpen){
-	    var h = "https://portal.it-chiba.ac.jp/";
+	    var h = "https://portal.chibatech.ac.jp/";
 	    chrome.tabs.create({url: h });
 	}
     });
